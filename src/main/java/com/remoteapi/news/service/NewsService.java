@@ -14,6 +14,7 @@ public class NewsService {
 
     //complete remote API : https://newsapi.org/v2/top-headlines?country=us&apiKey=251dcfe49d8844eab78ccfccaae3e5bf
 
+    //changes madegit add
     String baseUrl = "https://newsapi.org/v2/top-headlines";
 
 
