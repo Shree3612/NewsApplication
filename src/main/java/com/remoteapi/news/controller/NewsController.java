@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/news")
 public class NewsController {
 
+        //controller class
         @Autowired
         NewsService newsService;
 }
