@@ -1,6 +1,5 @@
 package com.remoteapi.news.controller;
 
-import com.remoteapi.news.dto.NewsResponse;
 import com.remoteapi.news.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +15,8 @@ public class NewsController {
         NewsService newsService;
 
         @GetMapping("/country")
-        public NewsResponse getNewsByCountry(@RequestParam("country") String country, @RequestParam("apiKey") String apiKey) {
+        public Object getNewsByCountry(@RequestParam("country") String country, @RequestParam("apiKey") String apiKey) {
                 return newsService.getNewsByCountry(country, apiKey);
         }
 }
+
